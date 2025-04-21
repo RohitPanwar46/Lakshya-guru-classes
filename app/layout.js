@@ -1,10 +1,6 @@
 import "./globals.css";
-import { Anton } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const anton = Anton({
-  subsets: ['latin'],
-  weight: '400'
-})
 
 export const metadata = {
   title: "Lakshya Guru Classes",
@@ -13,7 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body
         className={`  antialiased`}
       >

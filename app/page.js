@@ -1,16 +1,27 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
+import { Montserrat } from "next/font/google";
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: '600',
+})
+
+const montserrat500 = Montserrat({
+  subsets: ['latin'],
+  weight: '500',
+})
 
 export default function Home() {
   return (
-    <div className=" text-[#001033] bg-[#FDFEFE] min-h-[100vh]">
+    <div className=" text-[#001033]  bg-[#FDFEFE] min-h-[100vh]">
       <Navbar/>
-      <div className="flex justify-between gap-15 mx-20 items-center mt-26">
-        <div className="font-bold  text-3xl mb-20">
-          <p>My name</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis id hic deserunt iste inventore beatae harum tempore veniam illum earum et necessitatibus facilis repellat, dolore, eveniet, minus commodi laudantium rerum?</p>
+      <div className="flex justify-between gap-15 mx-40 items-center mt-20">
+        <div className=" text-[40px] mb-20">
+          <p className={montserrat.className}>I am <span className="text-[#263692] ">Dinesh</span></p>
+          <p className={montserrat.className}>Qualifications - BSC in Mathematic, B.ED and lot of experience in exam like exam1, exam2 and exam3 </p>
+          <button className="bg-[#263692] cursor-pointer rounded-full text-[#ffffff] px-5 mt-8 py-3 text-[16px]"><span className={montserrat500.className}>Join Us</span></button>
         </div>
         <Image className="rounded-xl" height={350} width={350} src="/assets/photos/dinesh.jpg" alt="" />
       </div>
