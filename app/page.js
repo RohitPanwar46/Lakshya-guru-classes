@@ -3,10 +3,9 @@ import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
 
 
-
 export default function Home() {
   return (
-    <div className=" text-[#060f3f] bg-[#FDFEFE] min-h-[100vh]">
+    <div className=" text-[#001033] bg-[#FDFEFE] min-h-[100vh]">
       <Navbar/>
       <div className="flex justify-between gap-15 mx-20 items-center mt-26">
         <div className="font-bold  text-3xl mb-20">
