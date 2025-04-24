@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -27,10 +28,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 font-semibold">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">Classes</li>
-          <li className="cursor-pointer">Contact</li>
-          <li className="cursor-pointer">About</li>
+          <Link href={"/"}><li className="cursor-pointer">Home</li></Link>
+          <Link href={"/classes"}><li className="cursor-pointer">Classes</li></Link>
+          <Link href={"/contact"}><li className="cursor-pointer">Contact</li></Link>
+          <Link href={"/about"}><li className="cursor-pointer">About</li></Link>
         </ul>
 
         {/* Mobile Dropdown Toggle */}
@@ -46,10 +47,10 @@ const Navbar = () => {
           {/* Dropdown menu */}
           {dropdownOpen && (
             <ul className="absolute right-0 mt-2 w-40 bg-white text-[#263692] shadow-lg rounded-lg py-2 text-sm font-medium">
-              <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">Home</li>
-              <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">Classes</li>
-              <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">Contact</li>
-              <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">About</li>
+              <Link href={"/"}><li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">Home</li></Link>
+              <Link href={"/classes"}><li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">Classes</li></Link>
+              <Link href={"/contack"}><li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">Contact</li></Link>
+              <Link href={"/about"}><li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">About</li></Link>
             </ul>
           )}
         </div>
