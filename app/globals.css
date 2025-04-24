@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 :root {
   --background: #ffffff;
