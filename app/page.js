@@ -92,7 +92,7 @@ export default function Home() {
         <p><strong>Location:</strong> Near Sanskrit School, Sadawata</p>
         <p><strong>Contact:</strong> 8290165996 | 8003023077</p>
         <p><strong>Email:</strong> dinesh829016@gmail.com</p>
-        <p className="mt-2 font-semibold">Your village. Your children. Your dreams — <span className="text-[#263692]">Lakshya Guru Classes</span>.</p>
+        <p className="mt-2 font-semibold">Your village&apos;s Your children&apos;s Your dream&apos;s best friend — <span className="text-[#263692]">Lakshya Guru Classes</span>.</p>
       </div>
     </div>
   </div>
