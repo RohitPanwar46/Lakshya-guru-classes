@@ -74,7 +74,7 @@ export default function ContactPage() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
+              className="w-full text-gray-800 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
             />
           </div>
 
@@ -88,7 +88,7 @@ export default function ContactPage() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
+              className="w-full text-gray-800 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
             />
           </div>
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
+              className="w-full text-gray-800 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
             />
           </div>
 
@@ -117,7 +117,7 @@ export default function ContactPage() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
+              className="w-full text-gray-800 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#4F46E5] focus:ring-2 focus:ring-[#4F46E5]/50 transition-all"
             ></textarea>
           </div>
 
