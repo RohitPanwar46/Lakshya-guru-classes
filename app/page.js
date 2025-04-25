@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Card from "@/components/Card";
@@ -67,20 +68,20 @@ export default function Home() {
             Qualifications - BSC in <span className="font-semibold text-[#263692]">Mathematics</span>, B.ED
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <motion.button
+            <Link href={"/about"}><motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="font-medium outline-[#263692] outline-1 hover:outline-[#4F46E5] hover:bg-gradient-to-r from-[#4F46E5] to-[#263692] hover:text-white text-[#263692] cursor-pointer rounded-full px-5 mt-6 py-3 text-[14px] sm:text-[16px] transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Learn More
-            </motion.button>
-            <motion.button
+            </motion.button></Link>
+            <Link href={"/contact"} ><motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="font-medium bg-gradient-to-r from-[#263692] to-[#4F46E5] hover:bg-gradient-to-l cursor-pointer rounded-full text-white px-5 mt-2 sm:mt-6 py-3 text-[14px] sm:text-[16px] shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Join Us
-            </motion.button>
+            </motion.button></Link>
           </div>
         </motion.div>
 
